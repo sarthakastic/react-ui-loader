@@ -1,4 +1,3 @@
-// import MyCounter from "./components/App";
-import MaxWidthWrapper from "./components/MaxWidthWrapper";
+import TextLoader from "./components/TextLoader";
 
-export { MaxWidthWrapper };
+export { TextLoader };

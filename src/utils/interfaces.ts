@@ -1,4 +1,4 @@
-interface MaxWidthWrapperProps {
+interface TextLoaderProps {
   bgColor?: string;
   widthValue?: string | number;
   heightValue?: string | number;
@@ -9,6 +9,12 @@ interface MaxWidthWrapperProps {
   show: boolean;
   loaderText?: string;
   textColor?: string;
+  fontSizeValue?: string;
+  fontWeightValue?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800;
+  loaderColor?: string;
+  loader?: boolean;
+  loaderSize?: "small" | "medium" | "large";
+  textAnimate?: boolean;
 }
 
-export { MaxWidthWrapperProps };
+export { TextLoaderProps };
