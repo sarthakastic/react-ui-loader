@@ -19,6 +19,7 @@ const TextLoader = ({
   loader,
   loaderColor,
   loaderSize,
+  loaderStyle,
   textAnimate,
   children,
   logo,
@@ -62,7 +63,7 @@ const TextLoader = ({
       }}
     >
       <span
-        className="loader"
+        className={`${loaderStyle === "CircularLoader" && "CircularLoader"}`}
         style={{
           borderBottomColor: "transparent",
           borderTopColor: loaderBorderColor,
@@ -72,6 +73,10 @@ const TextLoader = ({
           height: loaderDimension,
           width: loaderDimension,
         }}
+      ></span>{" "}
+      <span
+        className={`${loaderStyle === "DotLoader" && "DotLoader"}`}
+        style={{ color: loaderColor }}
       ></span>{" "}
       <span
         className={`${logoAnimate && "animate-logo"}`}

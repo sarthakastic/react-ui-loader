@@ -15,6 +15,7 @@ interface TextLoaderProps {
   fontWeightValue?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800;
   loaderColor?: string;
   loader?: boolean;
+  loaderStyle?: "CircularLoader" | "DotLoader";
   loaderSize?: "small" | "medium" | "large";
   textAnimate?: boolean;
   children?: ReactNode;
