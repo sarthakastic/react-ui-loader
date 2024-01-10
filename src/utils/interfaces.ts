@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface TextLoaderProps {
   bgColor?: string;
   widthValue?: string | number;
@@ -15,6 +17,12 @@ interface TextLoaderProps {
   loader?: boolean;
   loaderSize?: "small" | "medium" | "large";
   textAnimate?: boolean;
+  children?: ReactNode;
+  logo?: boolean;
+  logoHeight?: string;
+  logoWidth?: string;
+  logoAnimate?: boolean;
+  row?: boolean;
 }
 
 export { TextLoaderProps };

@@ -19,8 +19,17 @@
   animation: rotation 1s linear infinite;
 }
 
+.Logo {
+  height: 48px;
+  width: 48px;
+}
+
 .animate-text {
   animation: pump 2.5s linear infinite;
+}
+
+.animate-logo {
+  animation: beat 0.8s linear infinite;
 }
 
 @keyframes rotation {
@@ -38,5 +47,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes beat {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1.2;
   }
 }

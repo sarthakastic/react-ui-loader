@@ -20,6 +20,12 @@ const TextLoader = ({
   loaderColor,
   loaderSize,
   textAnimate,
+  children,
+  logo,
+  logoHeight,
+  logoWidth,
+  logoAnimate,
+  row,
 }: TextLoaderProps) => {
   const backgroundColor = bgColor && hexToRgb(bgColor);
   const width = widthValue;
@@ -35,7 +41,7 @@ const TextLoader = ({
   const loaderBorderColor = loaderColor;
   const showLoader = loader;
   const loaderDimension = loaderSize && loaderMeasurements(loaderSize);
-  const animate = textAnimate;
+  const flexDirection = !row ? "column" : "row";
 
   if (show === false) return;
 
@@ -52,6 +58,7 @@ const TextLoader = ({
         color,
         fontSize,
         fontWeight,
+        flexDirection,
       }}
     >
       <span
@@ -66,7 +73,17 @@ const TextLoader = ({
           width: loaderDimension,
         }}
       ></span>{" "}
-      <span className={`${animate && "animate-text"}`}>{text}</span>
+      <span
+        className={`${logoAnimate && "animate-logo"}`}
+        style={{
+          display: logo ? "flex" : "none",
+          width: logoWidth,
+          height: logoHeight,
+        }}
+      >
+        {children}
+      </span>
+      <span className={`${textAnimate && "animate-text"}`}>{text}</span>
     </div>
   );
 };
