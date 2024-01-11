@@ -14,6 +14,8 @@ const BlockShimmer = ({
   showCards,
   cardHeight,
   cardWidth,
+  backgroundColor,
+  showProfile,
 }: BlockShimmerProps) => {
   //   const shimmerAnimationStyle = {
   //     animation: "shimmering 10s linear infinite",
@@ -43,7 +45,8 @@ const BlockShimmer = ({
   ));
 
   return (
-    <div className="shimmer-container">
+    <div className="shimmer-container" style={{ backgroundColor }}>
+      {" "}
       <div
         className="cover-shimmer shimmer"
         style={{
@@ -54,6 +57,7 @@ const BlockShimmer = ({
       <div
         className="profile-shimmer profile-shimmer-animation"
         style={{
+          display: showProfile === false ? "none" : "inherit",
           margin: profilePositionCenter ? "auto" : "20px",
           borderRadius,
           position: showCover === false ? "inherit" : "relative",

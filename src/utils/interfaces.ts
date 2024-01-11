@@ -32,12 +32,14 @@ interface BlockShimmerProps {
   profileShape?: "roundedCorner" | "square";
   coverHeight?: string;
   showCover?: boolean;
+  showProfile?: boolean;
   showLines?: boolean;
   numberOfLines?: number;
   numberOfCards?: number;
   showCards?: boolean;
   cardHeight?: string;
   cardWidth?: string;
+  backgroundColor?: string;
 }
 
 export { TextLoaderProps, BlockShimmerProps };
