@@ -26,4 +26,12 @@ interface TextLoaderProps {
   row?: boolean;
 }
 
-export { TextLoaderProps };
+interface BlockShimmerProps {
+  show: boolean;
+  profilePositionCenter?: boolean;
+  profileShape?: "roundedCorner" | "square";
+  coverHeight?: string;
+  showCover?: boolean;
+}
+
+export { TextLoaderProps, BlockShimmerProps };

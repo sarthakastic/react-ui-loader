@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .TextLoader {
   position: fixed;
   display: flex;
@@ -15,7 +19,7 @@
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  margin-left: 10px;
+  margin-right: 10px;
   animation: rotation 1s linear infinite;
 }
 
@@ -42,6 +46,79 @@
   color: #fff;
   box-sizing: border-box;
   animation: animloader 2s linear infinite;
+}
+
+.shimmer-container {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: #fff;
+}
+
+.cover-shimmer {
+  height: 25%;
+  width: 100vw;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.line-shimmer {
+  height: 25px;
+  width: 98%;
+  margin: 10px;
+}
+
+.post-shimmer {
+  height: 420px;
+  width: 420px;
+  margin: 20px;
+}
+
+.posts-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-shimmer {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  position: relative;
+  bottom: 50px;
+  background-color: rgba(238, 238, 238, 1);
+  border: #fff 1px solid;
+  margin-left: 20px;
+}
+
+.shimmer {
+  animation: shimmering 5s linear infinite;
+
+  background: linear-gradient(
+    90deg,
+    rgba(226, 226, 226, 1) 9%,
+    rgba(238, 238, 238, 1) 18%,
+    rgba(226, 226, 226, 1) 31%
+  );
+}
+
+.profile-shimmer-animation {
+  animation: shimmering 10s linear infinite;
+
+  background: linear-gradient(
+    90deg,
+    rgba(226, 226, 226, 1) 9%,
+    rgba(238, 238, 238, 1) 18%,
+    rgba(226, 226, 226, 1) 31%
+  );
+}
+
+@keyframes shimmering {
+  0% {
+    background-position: -1300px 0;
+  }
+  100% {
+    background-position: 1300px 0;
+  }
 }
 
 @keyframes animloader {

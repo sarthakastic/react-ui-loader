@@ -1,3 +1,5 @@
 import TextLoader from "./components/TextLoader";
 
-export { TextLoader };
+import ProfileShimmer from "./components/ProfileShimmer";
+
+export { TextLoader, ProfileShimmer };
