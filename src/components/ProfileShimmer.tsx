@@ -8,14 +8,20 @@ const BlockShimmer = ({
   profileShape,
   coverHeight,
   showCover,
+  showLines,
+  numberOfCards,
+  numberOfLines,
+  showCards,
+  cardHeight,
+  cardWidth,
 }: BlockShimmerProps) => {
   //   const shimmerAnimationStyle = {
   //     animation: "shimmering 10s linear infinite",
   //     background: "linear-gradient(90deg, red 9%, orange 78%, red 31%)",
   //   };
 
-  let nLines = 10;
-  let nPosts = 10;
+  let nLines = numberOfLines ? numberOfLines : 10;
+  let nPosts = numberOfCards ? numberOfCards : 10;
   let borderRadius;
 
   if (profileShape === "roundedCorner") {
@@ -29,7 +35,11 @@ const BlockShimmer = ({
     <div key={index} className="shimmer line-shimmer"></div>
   ));
   const PostShimmers = Array.from({ length: nPosts }, (_, index) => (
-    <div key={index} className="shimmer post-shimmer"></div>
+    <div
+      key={index}
+      className="shimmer post-shimmer"
+      style={{ height: cardHeight, width: cardWidth }}
+    ></div>
   ));
 
   return (
@@ -50,8 +60,15 @@ const BlockShimmer = ({
           bottom: showCover === false ? "0px" : "50px",
         }}
       ></div>
-      {lineShimmers}
-      <div className="posts-container">{PostShimmers}</div>
+      {showLines === false ? null : lineShimmers}
+      <div
+        className="posts-container"
+        style={{
+          display: showCards === false ? "none" : "flex",
+        }}
+      >
+        {PostShimmers}
+      </div>
     </div>
   );
 };
