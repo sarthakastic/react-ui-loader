@@ -40,6 +40,7 @@ interface BlockShimmerProps {
   cardHeight?: string;
   cardWidth?: string;
   backgroundColor?: string;
+  color?: string;
 }
 
 export { TextLoaderProps, BlockShimmerProps };

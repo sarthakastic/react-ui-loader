@@ -16,11 +16,12 @@ const BlockShimmer = ({
   cardWidth,
   backgroundColor,
   showProfile,
+  color,
 }: BlockShimmerProps) => {
-  //   const shimmerAnimationStyle = {
-  //     animation: "shimmering 10s linear infinite",
-  //     background: "linear-gradient(90deg, red 9%, orange 78%, red 31%)",
-  //   };
+  const shimmerAnimationStyle = {
+    animation: "shimmering 10s linear infinite",
+    background: `linear-gradient(90deg, ${color} 9%, ${backgroundColor} 18%, ${color} 31%)`,
+  };
 
   let nLines = numberOfLines ? numberOfLines : 10;
   let nPosts = numberOfCards ? numberOfCards : 10;
@@ -45,7 +46,7 @@ const BlockShimmer = ({
   ));
 
   return (
-    <div className="shimmer-container" style={{ backgroundColor }}>
+    <div className="shimmer-container" style={shimmerAnimationStyle}>
       {" "}
       <div
         className="cover-shimmer shimmer"
@@ -57,6 +58,8 @@ const BlockShimmer = ({
       <div
         className="profile-shimmer profile-shimmer-animation"
         style={{
+          animation: "shimmering 10s linear infinite",
+          background: `linear-gradient(90deg, ${color} 9%, ${backgroundColor} 18%, ${color} 31%)`,
           display: showProfile === false ? "none" : "inherit",
           margin: profilePositionCenter ? "auto" : "20px",
           borderRadius,
