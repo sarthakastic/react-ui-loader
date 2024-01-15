@@ -5,7 +5,21 @@ Loader and Shimmer developed with customizable UI options to add different elemn
 ## Installation
 
 ```
-npm i react-ui-loader
+npm i react-loader-shimmer
+```
+
+## LOADER demo
+
+```
+import { TextLoader } from "react-ui-loader";
+
+const MyComponents = ()=> {
+    return (
+        <TextLoader show={true} />
+    )
+}
+
+export default MyComponents
 ```
 
 ## Loader
@@ -37,6 +51,20 @@ npm i react-ui-loader
 | logoWidth         | string           | no       | 48px          | Determines the width of logo in loading screen                                                               |
 | logoAnimate       | boolean          | no       | false         | Determines if we want to give an animation to the logo                                                       |
 | row               | boolean          | no       | true          | Arrange loader icon, loader text and loader image in a row or column                                         |
+
+## Shimmer demo
+
+```
+import { ProfileShimmer } from "react-ui-loader";
+
+const MyComponents = ()=> {
+    return (
+        <ProfileShimmer show={true} />
+    )
+}
+
+export default MyComponents
+```
 
 ## Shimmer
 
