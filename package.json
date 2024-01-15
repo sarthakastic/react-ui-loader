@@ -1,7 +1,7 @@
 {
   "name": "react-ui-loader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Loader and Shimmer developed with customizable UI options to add different elemnets in each.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -21,11 +21,20 @@
   ],
   "keywords": [
     "react",
-    "typescript",
-    "awesome-project"
+    "shimmer",
+    "loader",
+    "load"
   ],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarthakastic/react-ui-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sarthakastic/react-ui-loader/issues"
+  },
+  "homepage": "https://github.com/sarthakastic/react-ui-loader",
+  "author": "Sarthak Gupta",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.45",
     "css-loader": "^6.8.1",
