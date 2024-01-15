@@ -18,3 +18,12 @@ export function hexToRgb(hex: string): string {
 
   return `${r}, ${g}, ${b}`;
 }
+
+export function profileBorderRadius(shape: "roundedCorner" | "square"): string {
+  if (shape === "roundedCorner") {
+    return "10%";
+  } else if (shape === "square") {
+    return "0%";
+  }
+  return "100%";
+}

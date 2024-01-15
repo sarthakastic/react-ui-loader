@@ -44,7 +44,7 @@ const TextLoader = ({
   const loaderDimension = loaderSize && loaderMeasurements(loaderSize);
   const flexDirection = !row ? "column" : "row";
 
-  if (show === false) return;
+  if (show === false) return null;
 
   return (
     <div
