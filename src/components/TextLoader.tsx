@@ -76,7 +76,7 @@ const TextLoader = ({
       ></span>{" "}
       <span
         className={`${loaderStyle === "DotLoader" && "DotLoader"}`}
-        style={{ color: loaderColor }}
+        style={{ color: loaderColor, display: showLoader ? "inherit" : "none" }}
       ></span>{" "}
       <span
         className={`${logoAnimate && "animate-logo"}`}
