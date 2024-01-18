@@ -5,7 +5,7 @@ Loader and Shimmer developed with customizable UI options to add different elemn
 ## Installation
 
 ```
-npm i react-loader-shimmer
+npm i react-ui-loader
 ```
 
 ## LOADER demo
