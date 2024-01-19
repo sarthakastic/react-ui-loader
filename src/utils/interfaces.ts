@@ -31,6 +31,7 @@ interface BlockShimmerProps {
   profilePositionCenter?: boolean;
   profileShape?: "roundedCorner" | "square";
   coverHeight?: string;
+  coverWidth?: string;
   showCover?: boolean;
   showProfile?: boolean;
   showLines?: boolean;

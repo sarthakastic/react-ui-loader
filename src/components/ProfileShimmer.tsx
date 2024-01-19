@@ -8,6 +8,7 @@ const BlockShimmer = ({
   profilePositionCenter,
   profileShape,
   coverHeight,
+  coverWidth,
   showCover,
   showLines,
   numberOfCards,
@@ -59,7 +60,8 @@ const BlockShimmer = ({
           animation: "shimmering 10s linear infinite",
           background: `linear-gradient(90deg, ${color} 9%, ${shimmerColor} 18%, ${color} 31%)`,
           height: coverHeight,
-          display: showCover === false ? "none" : "inherit",
+          width: coverWidth,
+          display: showCover === false ? "none" : "flex",
         }}
       ></div>
       <div
