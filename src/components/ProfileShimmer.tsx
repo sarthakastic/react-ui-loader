@@ -21,6 +21,8 @@ const BlockShimmer = ({
   showProfile,
   color,
   shimmerColor,
+  lineHeight,
+  lineWidth,
 }: BlockShimmerProps) => {
   let nLines = numberOfLines ? numberOfLines : 10;
   let nPosts = numberOfCards ? numberOfCards : 10;
@@ -33,6 +35,8 @@ const BlockShimmer = ({
       style={{
         animation: "shimmering 10s linear infinite",
         background: `linear-gradient(90deg, ${color} 9%, ${shimmerColor} 18%, ${color} 31%)`,
+        height: lineHeight ? lineHeight : "10px",
+        width: lineWidth ? lineWidth : "98%",
       }}
     ></div>
   ));

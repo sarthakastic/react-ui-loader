@@ -64,13 +64,13 @@ body {
 .line-shimmer {
   height: 25px;
   width: 98%;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .post-shimmer {
   height: 420px;
   width: 420px;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .posts-container {
