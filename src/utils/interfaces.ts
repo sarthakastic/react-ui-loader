@@ -30,12 +30,15 @@ interface BlockShimmerProps {
   show: boolean;
   profilePositionCenter?: boolean;
   profileShape?: "roundedCorner" | "square";
+  profileDimension?: string;
   coverHeight?: string;
   coverWidth?: string;
   showCover?: boolean;
   showProfile?: boolean;
   showLines?: boolean;
   numberOfLines?: number;
+  lineHeight?: string;
+  lineWidth?: string;
   numberOfCards?: number;
   showCards?: boolean;
   cardHeight?: string;

@@ -7,6 +7,7 @@ const BlockShimmer = ({
   show,
   profilePositionCenter,
   profileShape,
+  profileDimension,
   coverHeight,
   coverWidth,
   showCover,
@@ -59,8 +60,8 @@ const BlockShimmer = ({
         style={{
           animation: "shimmering 10s linear infinite",
           background: `linear-gradient(90deg, ${color} 9%, ${shimmerColor} 18%, ${color} 31%)`,
-          height: coverHeight,
-          width: coverWidth,
+          height: coverHeight ? coverHeight : "250px",
+          width: coverWidth ? coverWidth : "100%",
           display: showCover === false ? "none" : "flex",
         }}
       ></div>
@@ -74,6 +75,8 @@ const BlockShimmer = ({
           borderRadius,
           position: showCover === false ? "inherit" : "relative",
           bottom: showCover === false ? "0px" : "50px",
+          width: profileDimension ? profileDimension : "200px",
+          height: profileDimension ? profileDimension : "200px",
         }}
       ></div>
       {showLines === false ? null : lineShimmers}
