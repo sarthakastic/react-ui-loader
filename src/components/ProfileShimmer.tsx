@@ -23,6 +23,8 @@ const BlockShimmer = ({
   shimmerColor,
   lineHeight,
   lineWidth,
+  shimmerHeight,
+  shimmerWidth,
 }: BlockShimmerProps) => {
   let nLines = numberOfLines ? numberOfLines : 10;
   let nPosts = numberOfCards ? numberOfCards : 10;
@@ -57,7 +59,14 @@ const BlockShimmer = ({
   if (!show) return null;
 
   return (
-    <div className="shimmer-container" style={{ backgroundColor }}>
+    <div
+      className="shimmer-container"
+      style={{
+        backgroundColor,
+        height: shimmerHeight ? shimmerHeight : "fit-content",
+        width: shimmerWidth ? shimmerWidth : "100%",
+      }}
+    >
       {" "}
       <div
         className="cover-shimmer shimmer"

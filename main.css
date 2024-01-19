@@ -49,7 +49,6 @@ body {
 }
 
 .shimmer-container {
-  min-height: 100vh;
   height: fit-content;
   max-width: 100vw;
   background-color: #fff;

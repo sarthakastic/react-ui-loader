@@ -28,6 +28,8 @@ interface TextLoaderProps {
 
 interface BlockShimmerProps {
   show: boolean;
+  shimmerWidth?: string;
+  shimmerHeight?: string;
   profilePositionCenter?: boolean;
   profileShape?: "roundedCorner" | "square";
   profileDimension?: string;
