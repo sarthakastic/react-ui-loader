@@ -3,7 +3,6 @@ body {
 }
 
 .TextLoader {
-  position: fixed;
   display: flex;
   background-color: black;
   width: 100vw;
