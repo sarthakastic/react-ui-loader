@@ -1,6 +1,6 @@
 {
   "name": "react-ui-loader",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "description": "Loader and Shimmer developed with customizable UI options to add different elemnets in each.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

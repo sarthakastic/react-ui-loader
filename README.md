@@ -2,10 +2,18 @@
 
 Loader and Shimmer developed with customizable UI options to add different elemnets in each.
 
+demo: https://react-ui-loader-demo.vercel.app/
+
 ## Installation
 
 ```
 npm i react-ui-loader
+```
+
+or
+
+```
+yarn add react-ui-loader
 ```
 
 ## LOADER demo
@@ -87,3 +95,9 @@ export default MyComponents
 | backgroundColor       | string   | no       | white         | Determines the color of background                           |
 | color                 | string   | no       | gray          | Determines the color of components                           |
 | shimmerColor          | string   | no       | white         | Determines the color of shimmer effect                       |
+| profileDimension      | string   | no       | 200px         | Determines the size of profile picure                        |
+| coverWidth            | string   | no       | 100%          | Determines the width of cover picure                         |
+| lineHeight            | string   | no       | 10px          | Determines the height of lines in shimmer                    |
+| lineWidth             | string   | no       | 98%           | Determines the width of lines in shimmer                     |
+| shimmerHeight         | string   | no       | fit-content   | Determines the height of shimmer component                   |
+| shimmerWidth          | string   | no       | 100%          | Determines the width of shimmer component                    |
